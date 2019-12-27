@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>和记租车</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.8.3.js"></script>
+	<script type="text/javascript">
+		function display_alert()
+		  {
+		  alert("订车成功")
+		  }
+	</script>
+</head>
+<body>
+	<div class="head gwidth">
+		<div class="had_left">
+			<img src="images/logo.png" alt="">
+		</div>
+		<div class="had_right">
+			<div class="rt_top">
+				<ul>
+					<li>登录&nbsp;|</li>
+					<li>免费注册&nbsp;|</li>
+					<li>关于和记&nbsp;|</li>
+					<li>帮助中心</li>
+					<li id="imga"><img src="images/qq.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="rt_bottom">
+				<ul>
+					<li id="b"><img src="images/iphone.png" alt=""></li>
+					<li>0532-83781666/888</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="nav">
+			<ul class="n-t">
+				<li id="nav1">网站首页</li>
+				<li>企业包车</li>
+				<li>商务包车</li>
+				<li>婚庆用车</li>
+				<li>代驾租车</li>
+				<li>自驾租车</li>
+				<li>旅游用车</li>
+				<li>车型查询</li>
+				<li>特惠活动</li>
+			</ul>
+
+
+
+			<div class="bd" id="bd">
+				<ul>
+					<li class="active"><a href="#">在线订车</a></li>
+					<li><a href="#">车型分类</a></li>
+				</ul>
+				<div class="select">
+					<p>取车地点:</p>
+					<select id="select" v-model="selected" class="s1">
+					    <option class="option" value="today">青岛市宁夏路89号</option>
+					    <option class="option" value="history">自定义</option>
+					</select>
+				</div>
+				<div class="select">
+					<p>还车地点:</p>
+					<select id="select" v-model="selected" class="s1">
+					    <option class="option" value="today">青岛市宁夏路89号</option>
+					    <option class="option" value="history">自定义</option>
+					</select>
+				</div>
+				<div class="select">
+					<p>取车时间</p>
+					<select id="select" v-model="selected" class="s1">
+					    <option class="option" value="today">2014-08-11</option>
+					    <option class="option" value="history">自定义</option>
+					</select>
+					<select id="select" v-model="selected" class="s1">
+					    <option class="option" value="today">13:00</option>
+					    <option class="option" value="history">自定义</option>
+					</select>
+				</div>
+				<div class="select">
+					<p>还车时间</p>
+					<select id="select" v-model="selected" class="s1">
+					    <option class="option" value="today">2014-08-14</option>
+					    <option class="option" value="history">自定义</option>
+					</select>
+					<select id="select" v-model="selected" class="s1">
+					    <option class="option" value="today">13:00</option>
+					    <option class="option" value="history">自定义</option>
+					</select>
+				</div>
+				<button onclick="display_alert()" class="bth1">立即订车</button>
+			</div>
+
+
+
+
+
+		<!-- 内容 -->
+			
+			<img src="images/nav.png" alt="">
+		</div>
+
+		<div class="content gwidth">
+			<div class="con_top">
+				<div class="cont_left">
+				
+				<div class="qwe">
+						<p><span class="p1">热门车型</span><span class="p2">更多+</span></p>
+				</div>
+					<ul>
+						<li id="c">
+							<img src="images/qiche.png" height="166" width="250" alt="">
+							<p>丰田凯美瑞/5座/三厢</p>
+						</li>
+						<li>
+							<img src="images/qiche.png" height="166" width="250" alt="">
+							<p>丰田凯美瑞/5座/三厢</p>
+						</li>
+						<li>
+							<img src="images/qiche.png" height="166" width="250" alt="">
+							<p>丰田凯美瑞/5座/三厢</p>
+						</li>
+					</ul>
+				</div>
+				<div class="cont_right">
+					<div class="qwe">
+						<p><span class="p1">特色服务</span><span class="p2">更多+</span></p>
+				</div>
+
+				<div class="w_top">
+					<div class="w_left">
+						<p>代驾</p>
+					</div>
+					<div class="w_right">
+						<ul>
+							<li class="li1">婚车服务</li>
+							<li class="li2">会议服务</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="w_bottom">
+					<ul>
+						<li class="li1">接机</li>
+						<li class="li2">送机</li>
+						<li id="d" class="li3">企业包车</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+
+			<div class="center">
+				<img src="images/a.png" height="72" width="1140" alt="">
+			</div>
+			<div class="con_bottom">
+				
+				<div class="bt_left">
+				<div class="zxc">
+						<p><span class="p1">热点链接</span><span class="p2">更多+</span></p>
+				</div>
+					<div class="q_left">
+						<img src="images/asd.png" height="242" width="251" alt="">
+						<p>会员专享特权</p>
+					</div>
+					<div class="q_right">
+						<ul>
+							<li id="f">
+								<img src="images/zxc.png" height="100" width="252" alt="">
+								<p>国庆节租六享一</p>
+							</li>
+							<li id="f">
+								<img src="images/zxc.png" height="100" width="252" alt="">
+								<p>国庆节租六享一</p>
+							</li>
+							<li>
+								<img src="images/zxc.png" height="100" width="252" alt="">
+								<p>国庆节租六享一</p>
+							</li>
+							<li>
+								<img src="images/zxc.png" height="100" width="252" alt="">
+								<p>国庆节租六享一</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="bt_right">
+					<div class="zc">
+						<p><span class="p1">热点链接</span><span class="p2">更多+</span></p>
+					</div>
+
+					<ul>
+						<li>青岛租车需要的手续哪些欸？</li>
+						<li>青岛租车需要的手续哪些欸？</li>
+						<li>青岛租车需要的手续哪些欸？</li>
+						<li>青岛租车需要的手续哪些欸？</li>
+						<li>青岛租车需要的手续哪些欸？</li>
+						<li>青岛租车需要的手续哪些欸？</li>
+						<li>青岛租车需要的手续哪些欸？</li>
+						<li>青岛租车需要的手续哪些欸？</li>
+					</ul>
+					<img src="images/aaa.png" height="81" width="170" alt="">
+
+				</div>
+			</div>
+
+			<div class="last">
+				<div class="zx">
+						<p><span class="p1">热点链接</span></p>
+				</div>
+				<ul>
+					<li>增值服务&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li>网站地图&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li>和记微博&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+					<li>和记博客</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="one gwidth">
+				<ul id="asd">
+					<li id="qqq">关于和记</li>
+					<li>公司简介</li>
+					<li>企业文化</li>
+					<li>企业荣誉</li>
+				</ul>
+			</div>
+			<div class="one gwidth">
+				<ul>
+					<li id="qqq">关于和记</li>
+					<li>公司简介</li>
+					<li>企业文化</li>
+					<li>企业荣誉</li>
+				</ul>
+			</div>
+			<div class="one gwidth">
+				<ul>
+					<li id="qqq">关于和记</li>
+					<li>公司简介</li>
+					<li>企业文化</li>
+					<li>企业荣誉</li>
+				</ul>
+			</div>
+			<div class="one gwidth">
+				<ul>
+					<li id="qqq">关于和记</li>
+					<li>公司简介</li>
+					<li>企业文化</li>
+					<li>企业荣誉</li>
+				</ul>
+			</div>
+			<div class="one gwidth">
+				<ul>
+					<li id="qqq">联系我们</li>
+					<li>地址：青岛市宁夏路89号</li>
+					<li>电话：0532-1251231</li>
+					<li>手机：124215312</li>
+				</ul>
+			</div>
+			<div class="one gwidth">
+				<ul>
+					<li>
+						<img src="images/erweima.png" height="100" width="100" alt="">
+					</li>
+				</ul>
+			</div>
+
+				<div class="footer2 gwidth">
+					<ul id="qr">
+						<li id="ag">Copyright 2014-2015 青岛和记汽车服务有限公司版权所有</li>
+						<li id="af">鲁ICP14005716号</li>
+						<li id="ab">版权声明&nbsp;&nbsp;|&nbsp;&nbsp;站长统计</li>
+					</ul>
+				</div>
+
+				<ul class="gwidth a123" id="qt">
+					<li>友情链接：青岛租车&nbsp;|</li>
+					<li>青岛汽贸租赁&nbsp;|</li>
+					<li>青岛婚庆租车&nbsp;|</li>
+					<li>青岛包车</li>
+				</ul>
+		</div>
+
+		<script>
+	$(function(){
+        $("#nav1").mouseover(function(){
+			$("#bd").css({"z-index":200})
+        });
+		$('#nav1').mouseout(function(){
+			$('#bd').css({"z-index":-1})
+		})
+        $('#bd').mouseover(function(){
+			$("#bd").css({"z-index":200})
+		});
+		$('#bd').mouseout(function(){
+			$('#bd').css({"z-index":-1})
+		})
+	});
+</script>
+</body>
+</html>
